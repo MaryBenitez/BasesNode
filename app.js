@@ -2,7 +2,6 @@ const fs = require('fs');
 const { crearArchivo } = require('./helpers/multiplicar')
 
 console.clear();
-const num = 5;
 
 /*console.log('=======================');
 console.log(`      Tabla del ${num}      `);
@@ -26,6 +25,11 @@ fs.writeFileSync(`tabla-${num}.txt`, salida);
 
 console.log(`Tabla-${num}.txt creada`); */
 
-crearArchivo(num)
+//extraer el argumento
+const [, , arg3 = 'base=5' ] = process.argv;
+const [, base = 5 ] = arg3.split('=');
+
+
+crearArchivo(base)
     .then( nombreArchivo => console.log(nombreArchivo,'CREADO'))
     .catch( err => console.log(err));
