@@ -1,0 +1,22 @@
+//Creando package.json
+
+    1. npm init (intro)
+    2. package name //Un nombre (intro)
+    3. version // 0.0.1 desarrollo (intro)
+    4. descripcion //descripcion de package (intro)
+    5. entry point //Punto de inicio, dejarlo asi como esta (intro)
+    6. test command //desjarlo asi como esta (intro)
+    7. git repository //link (intro)
+    8. keywords //comando o palabras que la persona busque, dejarlo asi como esta (intro)
+    9. author: MaryBe
+    10. license: MIT
+
+
+/*
+El package.json, es el Punto inicial de cualquier proyecto de node, nos ayuda nosotros y le ayuda a node
+a saber que comando son los que se utilizan para ejecutar su aplicacion
+*/
+
+//Dependencias
+    npm install (dependencia) --save-dev //Guarda dependencias de desarrollo
+    npm uninstall (dependencia) //Desinstala la dependencia 
