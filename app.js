@@ -1,5 +1,7 @@
 const fs = require('fs');
-const { crearArchivo } = require('./helpers/multiplicar')
+const { crearArchivo } = require('./helpers/multiplicar');
+const argv = require('yargs').argv;
+
 
 console.clear();
 
@@ -26,11 +28,17 @@ fs.writeFileSync(`tabla-${num}.txt`, salida);
 console.log(`Tabla-${num}.txt creada`); */
 
 //extraer el argumento
-const [, , arg3 = 'base=5' ] = process.argv;
-const [, base = 5 ] = arg3.split('=');
+// const [, , arg3 = 'base=5' ] = process.argv;
+// const [, base = 5 ] = arg3.split('=');
+
+console.log('====================================');
+console.log(process.argv);
+console.log(argv);
+console.log('base: yargs', argv.base);
+console.log('====================================');
 
 
-crearArchivo(base)
-    .then( nombreArchivo => console.log(nombreArchivo,'CREADO'))
-    .catch( err => console.log(err));
+// crearArchivo(base)
+//     .then( nombreArchivo => console.log(nombreArchivo,'CREADO'))
+//     .catch( err => console.log(err));
 

@@ -20,3 +20,5 @@ a saber que comando son los que se utilizan para ejecutar su aplicacion
 //Dependencias
     npm install (dependencia) --save-dev //Guarda dependencias de desarrollo
     npm uninstall (dependencia) //Desinstala la dependencia 
+    npm install (dependencia)@version //Instala una version en especifico
+    npm update // actualiza paquetes de dependencias
